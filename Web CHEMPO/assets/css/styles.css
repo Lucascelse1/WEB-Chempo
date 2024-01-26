@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.letras-arriba {
+    color: #f5f5f5;
+
+}
+
+.nav-conteiner {
+    width: 50%;
+    height: 7rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.div-logo {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.logo-navbar {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+}
+
+.en-es {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    align-items: center;
+    margin-right: 20%;
+}
+
+.en-es>p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.top>.letras-arriba {
+    display: flex;
+    width: 40%;
+    justify-content: end;
+    background-color: #435698;
+    border-radius: 18px 0 0 18px;
+}
+
+.top-info {
+    display: flex;
+    width: 60%;
+    justify-content: end;
+    margin-right: 3%;
+}
+
+.top-info>div {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-right: 1%;
+}
+
+
+.logo-chempo {
+    width: 200px;
+    margin-top: 2%;
+}
+
+.conteiner {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.carousel {
+    width: 100%;
+
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-control-prev {
+    z-index: 0;
+    display: flex;
+    justify-content: start;
+    margin-left: 1%;
+}
+
+
+.carousel-control-next {
+    z-index: 0;
+    display: flex;
+    justify-content: end;
+    margin-right: 1%;
+}
+
+
+.custom-carousel-control-next-icon {
+    color: #000000;
+    /* Color personalizado */
+    font-size: 30px;
+}
+
+
+
+/*----------------------------PRUEBAS--------------------------------*/
+
+
+.productos {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 26px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "producto1 producto2 producto3 producto4 producto5 producto6"
+        "producto7 producto8 producto9 producto10 producto11 producto12";
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 14;
+    z-index: 1;
+    background-image: url(../img/fondo-oculto.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    border: solid 2px black;
+
+
+}
+
+.productos.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.producto1 {
+    grid-area: producto1;
+}
+
+.producto2 {
+    grid-area: producto2;
+}
+
+.producto3 {
+    grid-area: producto3;
+}
+
+.producto4 {
+    grid-area: producto4;
+}
+
+.producto5 {
+    grid-area: producto5;
+}
+
+.producto6 {
+    grid-area: producto6;
+}
+
+.producto7 {
+    grid-area: producto7;
+}
+
+.producto8 {
+    grid-area: producto8;
+}
+
+.producto9 {
+    grid-area: producto9;
+}
+
+.producto10 {
+    grid-area: producto10;
+}
+
+.producto11 {
+    grid-area: producto11;
+}
+
+.producto12 {
+    grid-area: producto12;
+}
+
+.productos>div>a>img {
+    width: 8rem;
+}
+
+.aplicaciones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 14;
+    z-index: 1;
+    background-image: url(../img/fondo-oculto.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid 2px black;
+}
+
+.aplicaciones>div>a>img {
+    width: 8rem;
+}
+
+.aplicaciones.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.empresa {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 14;
+    z-index: 1;
+    background-image: url(../img/fondo-oculto.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid 2px black;
+}
+
+.empresa.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.empresa>div>a>img {
+    width: 8rem;
+}
+
+.info {
+    padding: 1rem;
+}
+
+.titulo-chempo-info {
+    font-family: 'Aileron', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.subtitulo-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #435698;
+    ;
+}
+
+.titulo-subtitulo {
+    padding-left: 8%;
+    padding-top: 3%;
+}
+
+.texto-info {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2;
+}
+
+.div-p-img {
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+
+.div-texto-info {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin-left: 2.5%;
+}
+
+.imagen-info {
+    width: 35%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen-caja {
+    width: 100%;
+}
+
+
+/*ACA VA EL EFECTO DE LA FOTO DE LA CAJA LUCAS PUTO FACU SE LA COME A MORDISCONES 
+LA CONCHA DE TU MADRE JOAQUINSITO DE ORTO CHUPA VERGA A DOS MANOS Y LA CONCHA DE TU ABUELA 
+QUE ES LA MISMA QUE LA MIA XD*/
+
+.seccion-vellon {
+    width: 100%;
+    margin-top: 4%;
+
+}
+
+.linea-gris {
+    padding: 2rem;
+    border-top: 4px solid gray;
+    width: 82.5%;
+    margin: 0 auto;
+
+}
+
+.titulo-principal {
+    padding-left: 7.9%;
+}
+
+.contenido-seccion3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.contenido-seccion3>div {
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
+.div-img-vellon1 {
+    width: 35%;
+}
+
+.div-img-vellon1>h2 {
+    padding-top: 2%;
+}
+
+.div-img-vellon1>p {
+    padding-top: 0.5%;
+
+}
+
+.img-vellon1 {
+    width: 100%;
+}
+
+.div-img-vellon2 {
+    width: 25%;
+}
+
+.div-img-vellon2>h2 {
+    padding-top: 2%;
+    color: #435698;
+}
+
+.img-vellon2 {
+    width: 100%;
+}
+
+.div-textos-vellon {
+    width: 20%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 45%;
+}
+
+.modal-content2 {
+    margin-top: 0;
+}
+
+.img-vellon-card{
+    width: 50%;
+    padding: 1%;
+}
+
+.div-vellon-card {
+    display: flex;
+}
+
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.div-img-vellon>p,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.div-img-vellon>h2{
+color: #435698;
+}
+
+.div-img-vellon>p{
+color: #6b6b6b;
+}
+
+.modal-content>p,
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-medio {
+    width: 25%;
+}
+.div-textos-vellon>div>h2{
+    color: grey
+}
+.div-col-textos>p{
+    color:#6b6b6b ;
+}
+.div-textos-vellon>div>p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.div-tintas {
+    position: absolute;
+    width: 35%;
+}
+
+.excerpt4{
+    color:#6b6b6b
+}
+.excerpt5{
+    color:#6b6b6b
+}
+
+.footer{
+    background-color: #E5E5E5;
+}
+
+.footer-logo{
+    width: 50%;
+    margin-left: 20%;
+    
+}
+
+.logos-footer{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.footer-info-div {
+    background-color: #222222;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    margin-top: 8%;
+}
